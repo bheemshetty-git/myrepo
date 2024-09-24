@@ -1,0 +1,26 @@
+swagger: '2.0'
+info:
+  title: openshiftsampREST1
+  version: 1.0.0
+  description: openshiftsampREST1
+paths:
+  "/ossampREST":
+    post:
+      operationId: postOssampREST
+      responses:
+        '200':
+          description: The operation was successful.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      description: Insert a ossampREST
+      parameters:
+      - name: body
+        in: body
+        schema:
+          type: string
+        description: The request body for the operation
+        required: true
+basePath: "/openshiftsamprest/v1"
+
